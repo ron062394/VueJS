@@ -9,6 +9,17 @@
 ```
 
 
+### Events
+```vue
+      <div class="box" @mouseover="handleEvent($event, 'mouseover')">Mouse over me</div>
+      <div class="box" @mouseleave="handleEvent">Mouse leave me</div>
+      <div class="box" @click="handleEvent">Click me</div>
+      <div class="box" @dblclick="handleEvent">Double click me</div>
+      <div class="box" @mousemove="handleMouseMove">Mouse position: {{ x }}, {{ y }}</div>
+```
+
+
+
 
 ### v-if & v-else 
 ```vue
@@ -24,5 +35,13 @@
 ### v-show
 ```vue
   <div v-show="showBook"> Book Visibility: {{ showBook }}</div>
+```
+
+
+### v-for
+```vue
+  <div v-for="book in books">
+      <p>{{ book.title }} - {{ book.author }} - {{ book.age }}</p>
+  </div>
 ```
 
