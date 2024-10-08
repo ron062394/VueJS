@@ -19,3 +19,10 @@
       <p>No book available</p>
   </div>
 ```
+
+
+### v-show
+```vue
+  <div v-show="showBook"> Book Visibility: {{ showBook }}</div>
+```
+
